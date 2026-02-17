@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+  /* Updated Colors based on 'COLOUR AND FONTS.png' */
+  --primary-gold: #b0976d;
+  /* Muted gold/beige from the buttons */
+  --primary-gold-hover: #967f57;
+
+  --text-dark: #333333;
+  --text-light: #666666;
+  --bg-light: #f9f9f9;
+  --white: #ffffff;
+
+  /* Fonts */
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-dark);
+  line-height: 1.6;
+  background-color: var(--white);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  /* The design often has uppercase headings */
+  letter-spacing: 0.5px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: var(--font-heading);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn-primary {
+  background-color: var(--primary-gold);
+  color: var(--white);
+  padding: 14px 28px;
+  border-radius: 2px;
+  /* Square/Sharp corners as per design image */
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-gold-hover);
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+/* Carousel Styles */
+.carousel-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.carousel-track {
+  display: inline-flex;
+  gap: 40px;
+  animation: scroll 30s linear infinite;
+  padding-left: 20px;
+}
+
+.carousel-item {
+  font-size: 1.1rem;
+  font-weight: 600;
+  opacity: 0.8;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-family: var(--font-heading);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
