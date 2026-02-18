@@ -3,7 +3,7 @@ const TrustMarks = () => {
     const trustMarks = [
         { name: "TrustMark", src: "/logos/transparent-logo.png" },
         { name: "InstallSure", src: "/logos/installsure.png" },
-        { name: "BFRC", src: "/logos/bfrc.png" },
+        { name: "BFRC", src: "/logos/bfrc.png", height: '45px' },
         { name: "FENSA", src: "/logos/fensa-new.png" }
     ];
 
@@ -16,7 +16,7 @@ const TrustMarks = () => {
                         src={mark.src}
                         alt={mark.name}
                         style={{
-                            height: mark.name === 'TrustMark' ? '150px' : '70px',
+                            height: mark.height || (mark.name === 'TrustMark' ? '150px' : '70px'),
                             width: 'auto',
                             objectFit: 'contain',
                             // filter: 'grayscale(100%) opacity(0.8)', // Removed as requested
