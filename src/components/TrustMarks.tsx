@@ -1,7 +1,7 @@
 
 const TrustMarks = () => {
     const trustMarks = [
-        { name: "TrustMark", src: "/logos/transparent-logo.png" },
+        { name: "TrustMark", src: "/logos/edited-logo.png" },
         { name: "InstallSure", src: "/logos/installsure.png" },
         { name: "BFRC", src: "/logos/bfrc.png", height: '45px' },
         { name: "FENSA", src: "/logos/fensa-new.png" }
