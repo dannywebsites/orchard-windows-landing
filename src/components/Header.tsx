@@ -8,8 +8,7 @@ const Header = () => {
             </div>
             <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '20px 20px' }}>
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
-                    <img src="/logos/official-logo.png" alt="Orchard Windows" style={{ height: '80px', width: 'auto', marginBottom: '5px' }} />
-                    <img src="/logos/25-years-badge.png" alt="Celebrating 25 Years" style={{ height: '40px', width: 'auto', alignSelf: 'center' }} />
+                    <img src="/logos/official-logo.png" alt="Orchard Windows" style={{ height: '80px', width: 'auto' }} />
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
                     <a href="#contact" style={{ color: '#333', textDecoration: 'none', fontWeight: 600 }}>Contact</a>

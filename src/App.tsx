@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
+import TrustMarks from './components/TrustMarks';
 
 
 import Testimonials from './components/Testimonials';
@@ -19,6 +20,7 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <TrustMarks />
         <Testimonials />
         <RecentProjects />
         <QuoteForm />

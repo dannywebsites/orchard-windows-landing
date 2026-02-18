@@ -5,7 +5,7 @@ const Hero = () => {
     return (
         <section style={{
             position: 'relative',
-            padding: '120px 0',
+            padding: '60px 0',
             textAlign: 'center',
             color: '#fff',
             backgroundColor: '#2c3e50', // Fallback
@@ -23,50 +23,10 @@ const Hero = () => {
                     Trusted by homeowners across Stamford and surrounding areas for over&nbsp;25&nbsp;years
                 </p>
 
-                <div style={{ marginBottom: '50px' }}>
+                <div style={{ marginBottom: '10px' }}>
                     <a href="#quote" className="btn-primary" style={{ padding: '15px 40px', fontSize: '1.1rem' }}>
                         Book My Free Design Session
                     </a>
-                </div>
-
-                {/* Trust Marks (Above the Fold) */}
-                <div style={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    flexWrap: 'wrap',
-                    gap: '40px',
-                    marginTop: 'auto',
-                    paddingBottom: '20px'
-                }}>
-                    {[
-                        { name: "TrustMark", src: "/logos/transparent-logo.png", height: '120px' },
-                        { name: "InstallSure", src: "/logos/installsure.png", height: '60px' },
-                        { name: "BFRC", src: "/logos/bfrc.png", height: '60px' },
-                        { name: "FENSA", src: "/logos/fensa-new.png", height: '60px' }
-                    ].map((mark, index) => (
-                        <img
-                            key={index}
-                            src={mark.src}
-                            alt={mark.name}
-                            style={{
-                                height: mark.height,
-                                width: 'auto',
-                                objectFit: 'contain',
-                                filter: 'brightness(0) invert(1)', // Make white for dark background
-                                opacity: 0.9,
-                                transition: 'all 0.3s ease'
-                            }}
-                            onMouseOver={(e) => {
-                                e.currentTarget.style.opacity = '1';
-                                e.currentTarget.style.transform = 'scale(1.05)';
-                            }}
-                            onMouseOut={(e) => {
-                                e.currentTarget.style.opacity = '0.9';
-                                e.currentTarget.style.transform = 'scale(1)';
-                            }}
-                        />
-                    ))}
                 </div>
             </div>
         </section >
