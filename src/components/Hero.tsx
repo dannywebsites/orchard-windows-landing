@@ -5,10 +5,11 @@ const Hero = () => {
     return (
         <section style={{
             position: 'relative',
-            padding: '160px 0 60px 0',
+            padding: '180px 0 100px 0',
             textAlign: 'center',
             color: '#fff',
             backgroundColor: '#2c3e50', // Fallback
+            minHeight: '75vh', // Push Trust Marks down but keep above fold
             backgroundImage: 'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
