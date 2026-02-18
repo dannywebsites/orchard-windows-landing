@@ -8,7 +8,7 @@ const Header = () => {
             </div>
             <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '20px 20px' }}>
                 <div style={{ fontSize: '1.5rem', fontWeight: 700, color: '#333', fontFamily: 'var(--font-heading)', textTransform: 'uppercase' }}>
-                    Orchard Home Improvements
+                    Orchard Windows
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
                     <a href="#contact" style={{ color: '#333', textDecoration: 'none', fontWeight: 600 }}>Contact</a>

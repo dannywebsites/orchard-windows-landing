@@ -4,7 +4,7 @@ const Footer = ({ onOpenPrivacy }: { onOpenPrivacy: () => void }) => {
             <div className="container">
                 <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '40px' }}>
                     <div style={{ maxWidth: '300px' }}>
-                        <h4 style={{ fontSize: '1.2rem', marginBottom: '15px' }}>Orchard Home Improvements</h4>
+                        <h4 style={{ fontSize: '1.2rem', marginBottom: '15px' }}>Orchard Windows</h4>
                         <p>Unit 6A, Tinwell Business Park, Steadfold Lane, Stamford, Lincolnshire, PE9 3UN</p>
                     </div>
                     <div>
@@ -18,7 +18,7 @@ const Footer = ({ onOpenPrivacy }: { onOpenPrivacy: () => void }) => {
                     </div>
                 </div>
                 <div style={{ marginTop: '40px', paddingTop: '20px', borderTop: '1px solid rgba(255,255,255,0.1)', textAlign: 'center', color: '#bdc3c7' }}>
-                    &copy; 2025 Orchard Home Improvements. All rights reserved. <span style={{ margin: '0 10px' }}>|</span> <a href="#" onClick={(e) => { e.preventDefault(); onOpenPrivacy(); }} style={{ color: '#bdc3c7', textDecoration: 'underline' }}>Privacy Policy</a>
+                    &copy; 2025 Orchard Windows. All rights reserved. <span style={{ margin: '0 10px' }}>|</span> <a href="#" onClick={(e) => { e.preventDefault(); onOpenPrivacy(); }} style={{ color: '#bdc3c7', textDecoration: 'underline' }}>Privacy Policy</a>
                 </div>
             </div>
         </footer>
