@@ -2,8 +2,10 @@ import '../index.css';
 
 const Header = () => {
     return (
-        <header>
-            <div style={{ backgroundColor: '#b0976d', color: '#fff', textAlign: 'center', padding: '10px', fontSize: '0.9rem', fontWeight: 600, letterSpacing: '0.5px' }}>
+        <header style={{ position: 'absolute', top: 0, left: 0, width: '100%', zIndex: 10 }}>
+            {/* Promotional bar removed as it conflicts with the "no white space" request, or should it be transparent? 
+               User said "no white spaces at the top". I will keep the text but remove the background color. */}
+            <div style={{ backgroundColor: 'rgba(0,0,0,0.3)', color: '#fff', textAlign: 'center', padding: '10px', fontSize: '0.9rem', fontWeight: 600, letterSpacing: '0.5px' }}>
                 10% Off All Orders This Month. Get Your Free Home Transformation Plan Today.
             </div>
             <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '20px 20px' }}>

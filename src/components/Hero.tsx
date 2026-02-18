@@ -5,7 +5,7 @@ const Hero = () => {
     return (
         <section style={{
             position: 'relative',
-            padding: '60px 0',
+            padding: '160px 0 60px 0',
             textAlign: 'center',
             color: '#fff',
             backgroundColor: '#2c3e50', // Fallback
