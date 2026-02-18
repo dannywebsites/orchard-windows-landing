@@ -15,16 +15,6 @@ const Hero = () => {
             overflow: 'hidden'
         }}>
             <div className="container" style={{ position: 'relative', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                <div className="hero-review-card">
-                    <div style={{ display: 'flex', alignItems: 'center', marginBottom: '8px' }}>
-                        <span style={{ fontWeight: 'bold', color: '#333', marginRight: '8px' }}>Sarah P.</span>
-                        <span style={{ fontSize: '0.8rem', color: '#777' }}>Google Review</span>
-                    </div>
-                    <div style={{ color: '#f1c40f', marginBottom: '8px', fontSize: '1.1rem' }}>★★★★★</div>
-                    <p style={{ fontSize: '0.9rem', color: '#555', margin: 0, fontStyle: 'italic', lineHeight: '1.4' }}>
-                        "This new space has changed the way we live. Over the 4 months it took to build the extension and complete all the works, Orchard were outstanding."
-                    </p>
-                </div>
 
                 <h1 style={{ fontSize: '3.5rem', fontWeight: 800, marginBottom: '20px', letterSpacing: '-1px', textWrap: 'balance' }}>
                     Windows, Doors & Creative Living&nbsp;Spaces
@@ -33,12 +23,50 @@ const Hero = () => {
                     Trusted by homeowners across Stamford and surrounding areas for over&nbsp;25&nbsp;years
                 </p>
 
-
-
-                <div style={{ marginBottom: '40px' }}>
+                <div style={{ marginBottom: '50px' }}>
                     <a href="#quote" className="btn-primary" style={{ padding: '15px 40px', fontSize: '1.1rem' }}>
                         Book My Free Design Session
                     </a>
+                </div>
+
+                {/* Trust Marks (Above the Fold) */}
+                <div style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    flexWrap: 'wrap',
+                    gap: '40px',
+                    marginTop: 'auto',
+                    paddingBottom: '20px'
+                }}>
+                    {[
+                        { name: "TrustMark", src: "/logos/transparent-logo.png", height: '120px' },
+                        { name: "InstallSure", src: "/logos/installsure.png", height: '60px' },
+                        { name: "BFRC", src: "/logos/bfrc.png", height: '60px' },
+                        { name: "FENSA", src: "/logos/fensa-new.png", height: '60px' }
+                    ].map((mark, index) => (
+                        <img
+                            key={index}
+                            src={mark.src}
+                            alt={mark.name}
+                            style={{
+                                height: mark.height,
+                                width: 'auto',
+                                objectFit: 'contain',
+                                filter: 'brightness(0) invert(1)', // Make white for dark background
+                                opacity: 0.9,
+                                transition: 'all 0.3s ease'
+                            }}
+                            onMouseOver={(e) => {
+                                e.currentTarget.style.opacity = '1';
+                                e.currentTarget.style.transform = 'scale(1.05)';
+                            }}
+                            onMouseOut={(e) => {
+                                e.currentTarget.style.opacity = '0.9';
+                                e.currentTarget.style.transform = 'scale(1)';
+                            }}
+                        />
+                    ))}
                 </div>
             </div>
         </section >

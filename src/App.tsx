@@ -2,7 +2,6 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 
 
-import TrustMarks from './components/TrustMarks';
 import Testimonials from './components/Testimonials';
 import RecentProjects from './components/RecentProjects';
 import QuoteForm from './components/QuoteForm';
@@ -20,7 +19,6 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <TrustMarks />
         <Testimonials />
         <RecentProjects />
         <QuoteForm />
