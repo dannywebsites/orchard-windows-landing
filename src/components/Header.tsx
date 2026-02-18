@@ -10,7 +10,7 @@ const Header = () => {
             </div>
             <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '20px 20px' }}>
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
-                    <img src="/logos/official-logo.png" alt="Orchard Windows" style={{ height: '80px', width: 'auto', filter: 'drop-shadow(0 0 15px rgba(255, 255, 255, 0.8))' }} />
+                    <img src="/logos/official-logo.png" alt="Orchard Windows" style={{ height: '80px', width: 'auto', filter: 'drop-shadow(0 0 20px rgba(255, 255, 255, 0.9)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.6))' }} />
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
                     <a href="#contact" style={{ color: '#333', textDecoration: 'none', fontWeight: 600 }}>Contact</a>
