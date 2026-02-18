@@ -58,8 +58,8 @@ const QuoteForm = () => {
         <section id="quote" className="section-padding" style={{ backgroundColor: '#fff', scrollMarginTop: '60px' }}>
             <div className="container" style={{ maxWidth: '800px' }}>
                 <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-                    <h2 style={{ fontSize: '2.5rem', color: '#2c3e50', marginBottom: '20px' }}>Get your free quote</h2>
-                    <p style={{ fontSize: '1.2rem', marginBottom: '20px' }}>Tell us what you need. We’ll call you back within 24 hours to arrange your free home survey. No obligation. No pressure.</p>
+                    <h2 style={{ fontSize: '2.5rem', color: '#2c3e50', marginBottom: '20px' }}>Get your free home transformation plan</h2>
+                    <p style={{ fontSize: '1.2rem', marginBottom: '20px' }}>Tell us what you need. We’ll call you back within 24 hours to arrange your free home survey.</p>
                 </div>
 
                 <form onSubmit={handleSubmit} style={{ backgroundColor: '#f9f9f9', padding: '40px', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}>
@@ -133,12 +133,12 @@ const QuoteForm = () => {
                             style={{ marginTop: '5px', transform: 'scale(1.2)' }}
                         />
                         <label htmlFor="marketingConsent" style={{ fontSize: '0.9rem', color: '#555', lineHeight: '1.4' }}>
-                            I agree to receiving information via SMS and calls from us. No sales pitch. Just a call from Diane to book your survey.
+                            I agree to receiving information via SMS and calls from us.
                         </label>
                     </div>
 
                     <button type="submit" className="btn-primary" style={{ width: '100%', padding: '15px', fontSize: '1.2rem' }}>
-                        Get My Free Quote
+                        Book My Free Design Session
                     </button>
                 </form>
             </div>

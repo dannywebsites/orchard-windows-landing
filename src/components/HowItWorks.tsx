@@ -26,7 +26,7 @@ const HowItWorks = () => {
 
                 <div style={{ textAlign: 'center', marginTop: '60px' }}>
                     <a href="#quote" className="btn-primary" style={{ padding: '15px 40px', fontSize: '1.1rem' }}>
-                        Get Your Free Quote
+                        Get your free home transformation plan
                     </a>
                 </div>
             </div>

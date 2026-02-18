@@ -9,7 +9,7 @@ const Footer = ({ onOpenPrivacy }: { onOpenPrivacy: () => void }) => {
                     </div>
                     <div>
                         <h4 style={{ fontSize: '1.1rem', marginBottom: '15px' }}>Contact</h4>
-                        <p>Email: <a href="mailto:sales@orchardwindows.co.uk" style={{ textDecoration: 'underline', color: '#fff' }}>sales@orchardwindows.co.uk</a></p>
+
                     </div>
                     <div>
                         <h4 style={{ fontSize: '1.1rem', marginBottom: '15px' }}>Opening Hours</h4>

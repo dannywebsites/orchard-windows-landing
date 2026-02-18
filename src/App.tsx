@@ -1,8 +1,10 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
-import ProblemSection from './components/ProblemSection';
-import HowItWorks from './components/HowItWorks';
+
+
+import TrustMarks from './components/TrustMarks';
 import Testimonials from './components/Testimonials';
+import RecentProjects from './components/RecentProjects';
 import QuoteForm from './components/QuoteForm';
 import Footer from './components/Footer';
 import CookieBanner from './components/CookieBanner';
@@ -18,9 +20,9 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <TrustMarks />
         <Testimonials />
-        <ProblemSection />
-        <HowItWorks />
+        <RecentProjects />
         <QuoteForm />
       </main>
       <Footer onOpenPrivacy={() => setIsPrivacyOpen(true)} />
