@@ -15,6 +15,7 @@ const TrustMarks = () => {
                         key={index}
                         src={mark.src}
                         alt={mark.name}
+                        className="trust-mark-img"
                         style={{
                             height: mark.height || (mark.name === 'TrustMark' ? '150px' : '70px'),
                             width: 'auto',

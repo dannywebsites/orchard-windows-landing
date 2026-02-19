@@ -7,10 +7,7 @@ const Footer = ({ onOpenPrivacy }: { onOpenPrivacy: () => void }) => {
                         <h4 style={{ fontSize: '1.2rem', marginBottom: '15px' }}>Orchard Windows</h4>
                         <p>Unit 6A, Tinwell Business Park, Steadfold Lane, Stamford, Lincolnshire, PE9 3UN</p>
                     </div>
-                    <div>
-                        <h4 style={{ fontSize: '1.1rem', marginBottom: '15px' }}>Contact</h4>
 
-                    </div>
                     <div>
                         <h4 style={{ fontSize: '1.1rem', marginBottom: '15px' }}>Opening Hours</h4>
                         <p>Monday to Friday: 8am – 5pm</p>

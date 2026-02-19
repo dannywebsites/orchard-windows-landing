@@ -17,7 +17,7 @@ const Hero = () => {
         }}>
             <div className="container" style={{ position: 'relative', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
 
-                <h1 style={{ fontSize: '3.5rem', fontWeight: 800, marginBottom: '20px', letterSpacing: '-1px', textWrap: 'balance' }}>
+                <h1 className="hero-title" style={{ fontWeight: 800, marginBottom: '20px', letterSpacing: '-1px', textWrap: 'balance', fontSize: '3.5rem' }}>
                     Windows, Doors & Creative Living&nbsp;Spaces
                 </h1>
                 <p style={{ fontSize: '1.25rem', maxWidth: '750px', margin: '0 auto 30px', opacity: 0.9 }}>

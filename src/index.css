@@ -125,3 +125,40 @@ p {
     transform: translateX(-50%);
   }
 }
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem !important;
+    /* Smaller font to prevent overlap */
+  }
+
+  .quote-form-container {
+    padding: 20px !important;
+  }
+
+  .quote-form-title {
+    font-size: 1.8rem !important;
+  }
+
+  /* Compact Inputs for Mobile */
+  .quote-form-input {
+    padding: 8px !important;
+    margin-bottom: 10px !important;
+    /* Reduced margin */
+  }
+
+  .quote-form-group {
+    margin-bottom: 10px !important;
+    /* Tighten up spacing */
+  }
+
+  /* Standardize Trust Marks on Mobile */
+  .trust-mark-img {
+    height: 50px !important;
+    /* Uniform height */
+    width: auto !important;
+    max-width: 100px;
+    /* Prevent wide logos from taking too much space */
+  }
+}

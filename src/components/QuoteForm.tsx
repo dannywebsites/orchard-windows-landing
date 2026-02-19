@@ -62,8 +62,8 @@ const QuoteForm = () => {
                     <p style={{ fontSize: '1.2rem', marginBottom: '20px' }}>Tell us what you need. We’ll call you back within 24 hours to arrange your free home survey.</p>
                 </div>
 
-                <form onSubmit={handleSubmit} style={{ backgroundColor: '#f9f9f9', padding: '40px', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}>
-                    <div style={{ marginBottom: '20px' }}>
+                <form onSubmit={handleSubmit} className="quote-form-container" style={{ backgroundColor: '#f9f9f9', padding: '40px', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}>
+                    <div className="quote-form-group" style={{ marginBottom: '20px' }}>
                         <label htmlFor="firstName" style={{ display: 'block', marginBottom: '8px', fontWeight: 600 }}>First Name *</label>
                         <input
                             type="text"
@@ -72,11 +72,12 @@ const QuoteForm = () => {
                             required
                             value={formData.firstName}
                             onChange={handleChange}
+                            className="quote-form-input"
                             style={{ width: '100%', padding: '12px', border: '1px solid #ddd', borderRadius: '4px', fontSize: '1rem' }}
                         />
                     </div>
 
-                    <div style={{ marginBottom: '20px' }}>
+                    <div className="quote-form-group" style={{ marginBottom: '20px' }}>
                         <label htmlFor="phone" style={{ display: 'block', marginBottom: '8px', fontWeight: 600 }}>Phone Number *</label>
                         <input
                             type="tel"
@@ -85,11 +86,12 @@ const QuoteForm = () => {
                             required
                             value={formData.phone}
                             onChange={handleChange}
+                            className="quote-form-input"
                             style={{ width: '100%', padding: '12px', border: '1px solid #ddd', borderRadius: '4px', fontSize: '1rem' }}
                         />
                     </div>
 
-                    <div style={{ marginBottom: '20px' }}>
+                    <div className="quote-form-group" style={{ marginBottom: '20px' }}>
                         <label htmlFor="postcode" style={{ display: 'block', marginBottom: '8px', fontWeight: 600 }}>Postcode *</label>
                         <input
                             type="text"
@@ -98,11 +100,12 @@ const QuoteForm = () => {
                             required
                             value={formData.postcode}
                             onChange={handleChange}
+                            className="quote-form-input"
                             style={{ width: '100%', padding: '12px', border: '1px solid #ddd', borderRadius: '4px', fontSize: '1rem' }}
                         />
                     </div>
 
-                    <div style={{ marginBottom: '30px' }}>
+                    <div className="quote-form-group" style={{ marginBottom: '30px' }}>
                         <label htmlFor="interest" style={{ display: 'block', marginBottom: '8px', fontWeight: 600 }}>What are you interested in? *</label>
                         <select
                             id="interest"
@@ -110,6 +113,7 @@ const QuoteForm = () => {
                             required
                             value={formData.interest}
                             onChange={handleChange}
+                            className="quote-form-input"
                             style={{ width: '100%', padding: '12px', border: '1px solid #ddd', borderRadius: '4px', fontSize: '1rem', backgroundColor: '#fff' }}
                         >
                             <option value="">Please select...</option>
@@ -123,7 +127,7 @@ const QuoteForm = () => {
                         </select>
                     </div>
 
-                    <div style={{ marginBottom: '30px', display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
+                    <div className="quote-form-group" style={{ marginBottom: '30px', display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
                         <input
                             type="checkbox"
                             id="marketingConsent"
